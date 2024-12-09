@@ -1,35 +1,39 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: "Merriweather", serif;
 }
-main{
+
+main {
     max-width: 960px;
     margin: auto;
 }
+
 /* Banner-Section */
-.banner{
+.banner {
     max-width: 960px;
     margin: auto;
     text-align: center;
     margin-top: 20px;
 
 }
-.banner-content{
+
+.banner-content {
     width: 960px;
     background-image: url("/images/Banner\ Image.png");
-    background-position:center bottom;
+    background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    padding:100px 0;
-    color:#fff;
+    padding: 100px 0;
+    color: #fff;
     position: relative;
     border-radius: 10px;
     z-index: 0;
 }
-.banner-content::after{
+
+.banner-content::after {
     content: "";
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -38,40 +42,313 @@ main{
     background-color: rgba(41, 37, 37, 0.6);
     z-index: -1;
 }
-.banner-content h2{
+
+.banner-content h2 {
     font-size: 65px;
-    font-weight:400;
+    font-weight: 400;
 }
-.banner-content h4{
+
+.banner-content h4 {
     margin-bottom: 10px;
     font-weight: 400;
-    font-size:24px;
+    font-size: 24px;
 }
+
 /* Start Discount Section */
-.discount-section{
+.discount-section {
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.discount-container{
+
+.discount-container {
     text-align: center;
 }
-.discount-container h2{
+
+.discount-container h2 {
     font-size: 80px;
     font-weight: 800;
-    color:red;
+    color: red;
     margin-bottom: 30px;
 }
-.discount-container h4{
+
+.discount-container h4 {
     font-size: 22px;
     font-weight: 500;
-    color:red;
+    color: red;
     margin-bottom: 10px;
 }
-.discount-container h3{
-    font-size:48px;
+
+.discount-container h3 {
+    font-size: 48px;
     font-weight: bold;
     margin-bottom: 50px;
 }
-.discount-container img{
+
+.discount-container img {
     width: 600px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-image: url("/images/Vectorrr.png");
+    margin-bottom: 100px;
+    padding: 50px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    z-index: 0;
+}
+.welcome-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: rgba(41, 37, 37, 0.6); */
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(44, 41, 41, 0.048));
+    z-index: -1;
+}
+
+.welcome-section .welcome-section-container {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-section h2 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.welcome-section input {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: orange;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.welcome-section-right img {
+    height: 400px;
+}
+
+/* Time Section */
+.time-section {
+    background-image: linear-gradient(#ffe3e3, #ffffff);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.time-section .time-section-container {
+    text-align: center;
+    padding: 100px 0;
+}
+.time-section h4{
+    font-size:32px;
+    margin-bottom: 20px;
+}
+.time-section h4> span{
+    color:red;
+}
+.time-section input{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding:20px 30px;
+    background-color: red;
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* Coming Soon */
+.coming-soon-section{
+    margin-bottom: 100px;
+}
+.coming-soon-section .coming-soon-container{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    align-items: center;
+}
+.coming-soon-section .cs-middle img{
+    max-width: 100%;
+    border-radius: 100%;
+}
+.coming-soon-section .cs-left{
+    width:400px;
+}
+.coming-soon-section .cs-middle{
+    width: 300px;
+    border:10px solid red;
+    border-radius: 100%;
+    padding:20px;
+}
+.coming-soon-section .cs-right{
+    width:400px;
+}
+.coming-soon-section h4{
+    font-size:24px;
+    color:red;
+    margin-bottom: 20px;
+}
+.coming-soon-section h3{
+    font-size:40px;
+    margin-bottom: 20px;
+}
+.coming-soon-section p{
+    color:#070211;
+}
+.cs-right> p{
+    margin-bottom: 20px;
+}
+.cs-right>h4{
+    font-size: 48px;
+}
+/* Holydays Section */
+.holydays-section{
+    margin-bottom: 100px;
+}
+.holydays-section .holydays-content{
+    text-align: center;
+    padding:50px 50px;
+}
+.holydays-section .holydays-content> h4{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.holydays-section .holydays-content> h2{
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+.holydays-section .holydays-content> p{
+    font-size: 20px;
+}
+.holydays-section .holydays-content span{
+    color:red;
+}
+.holydays-section .holyday-discount-main-container .holyday-container{
+    display: flex;
+    position:relative;
+}
+/* .holydays-section .holyday-discount-main-container .holyday-container .img-1{
+    margin-bottom: -260px;
+    width:560px;
+} */
+.holydays-section .holyday-discount-main-container .holyday-container .img-1 img{
+   width: 100%;
+   margin-bottom: -600px;
+}
+.holydays-section .holyday-discount-main-container .holyday-container .img-2{
+   position: relative;
+}
+.holydays-section .holyday-discount-main-container .holyday-container .img-2 > .discount{
+   position: absolute;
+   top:50px;
+   left:-150px;
+}
+
+.solid-img img{
+    width: 100%;
+    margin-top: -4px;
+}
+/* Portfolio Section */
+.portfolio-section{
+        margin-bottom: 100px;
+}
+.portfolio-section .portfolio-text{
+    text-align: left;
+}
+.portfolio-section .portfolio-text h4{
+    font-size: 24px;
+    color:red;
+    margin-bottom: 25px;
+}
+.portfolio-section .portfolio-text h2{
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+.portfolio-section .portfolio-text p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.portfolio-section .portfolio-container{
+    width:100%;
+}
+.portfolio-section .portfolio-container .item{
+    display: flex;
+    gap:20px;
+}
+.portfolio-section .portfolio-container .item img{
+    max-width: 100%;
+}
+/* Newsletter Section */
+.newsletter-section{
+    background-color: #ffe3e3b4;
+    padding:30px 100px;
+    margin-bottom: 100px;
+}
+.newsletter-section .newsletter-section-container{
+text-align: center;
+}
+.newsletter-section .newsletter-section-container .img{
+margin-bottom: 50px;
+}
+.newsletter-section .newsletter-section-container h2{
+margin-bottom: 30px;
+font-size: 48px;
+}
+.newsletter-section .newsletter-section-container p{
+margin-bottom: 30px;
+}
+.newsletter-section .newsletter-section-container .form{
+ display: flex;
+ justify-content: center;
+}
+.newsletter-section .newsletter-section-container .form input{
+ padding:20px;
+ border:none;
+ outline: none;
+}
+.newsletter-section .newsletter-section-container .form .email{
+ border-radius: 40px 0px 00px 40px;
+}
+.newsletter-section .newsletter-section-container .form .subscribe{
+ border-radius: 0px 40px 40px 0px;
+ background-color: red;
+ color:#fff;
+ cursor: pointer;
+}
+/* Footer Section */
+footer{
+    background-color: black;
+    color: #fff;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.footer-top .footer-middle{
+    padding-top: 150px;
+}
+.footer-top .contact{
+    display: flex;
+    gap: 10px;
+}
+.footer-bottom{
+    text-align: center;
 }
