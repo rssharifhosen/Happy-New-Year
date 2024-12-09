@@ -20,7 +20,7 @@ main {
 
 .banner-content {
     width: 960px;
-    background-image: url("./images/Banner\ Image.png");
+    background-image: url("/images/BannerImage.png");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ main {
 
 /* Welcome Section */
 .welcome-section {
-    background-image: url("./images/Vectorrr.png");
+    background-image: url("/images/Vectorrr.png");
     margin-bottom: 100px;
     padding: 50px;
     background-position: center top;
